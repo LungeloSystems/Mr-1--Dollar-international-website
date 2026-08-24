@@ -261,7 +261,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0">
                         <a href="#" onClick={(e) => handleNavClick(e, 'home')} className="block cursor-pointer transform hover:scale-105 transition-transform duration-300">
-                            <img src="https://i.postimg.cc/J4LgGJnS/Horizontal_Inverse.png" alt="Mr One Dollar International Logo" className="h-12 w-auto" />
+                            <img src="https://i.postimg.cc/J4LgGJnS/Horizontal_Inverse.png" alt="Mr One Dollar International Logo" className="h-12 w-auto" loading="eager" />
                         </a>
                     </div>
                     <div className="hidden md:block">
@@ -407,6 +407,7 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage, currentPage }) => {
                                             src="https://i.postimg.cc/7YZjFzbK/icons8-zoom-logo-34-1.png"
                                             alt="Zoom Support"
                                             className="h-[34px] w-[34px] object-contain"
+                                            loading="lazy"
                                         />
                                     </span>
                                     <span className="text-sm">Instant Zoom Support</span>
@@ -426,6 +427,7 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage, currentPage }) => {
     src="https://i.postimg.cc/Gh5YKvKT/Badge_White.png" 
     alt="MR1Dollar Badge" 
     className="w-6 h-6 object-contain"
+    loading="lazy"
   />
 </div>
                                                 <p className="mt-1 text-sm text-slate-300">Need help? Join our live support session for immediate assistance.</p>
@@ -713,6 +715,7 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                                         src={partner.logoUrl} 
                                                         alt={`${partner.name} logo`} 
                                                         className="h-8 w-auto"
+                                                        loading="lazy"
                                                     />
                                                     <span className="px-2 py-1 text-xs font-medium rounded-full bg-slate-700/50 text-slate-300">
                                                         Broker
@@ -817,6 +820,7 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                                     src={partner.logoUrl} 
                                                     alt={`${partner.name} logo`} 
                                                     className="h-8 w-auto"
+                                                    loading="lazy"
                                                 />
                                                 <span className="px-2 py-1 text-xs font-medium rounded-full bg-slate-700/50 text-slate-300">
                                                     Prop Firm
@@ -936,6 +940,7 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                     src="https://fundedaward.com/cdn/shop/files/FA_vector_logo.png?height=54&v=1767254179" 
                                     alt="FundedAward" 
                                     className="h-8 w-auto"
+                                    loading="lazy"
                                 />
                                 <span className="px-2 py-1 text-xs font-medium rounded-full bg-slate-700/50 text-slate-300">
                                     Certificate Framing
@@ -975,6 +980,7 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                             src="https://fundedaward.com/cdn/shop/files/Bundle.png?v=1763145691" 
                                             alt="Certificate Framing Bundle" 
                                             className="w-full h-32 object-cover rounded border border-slate-700"
+                                            loading="lazy"
                                         />
                                     </div>
                                     <div className="flex items-center justify-between">
@@ -1170,7 +1176,7 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                                             }}
                                                             className={`inline-flex items-center justify-center gap-2 ${canUseStep2 ? 'bg-transparent border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black' : 'bg-gray-600 border-2 border-gray-600 text-gray-400 cursor-not-allowed'} font-bold py-2 px-4 rounded-md transition-colors duration-200 text-sm`}
                                                         >
-                                                            <img src="https://i.ibb.co/YGPkfR7/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-5 w-auto object-contain" />
+                                                            <img src="https://i.ibb.co/YGPkfR7/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-5 w-auto object-contain" loading="lazy" />
                                                             Register on PrimeXBT
                                                         </a>
                                                     </div>
@@ -1540,6 +1546,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
     src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" 
     alt="MR ONE DOLLAR Logo" 
     className="w-8 h-8 object-contain"
+    loading="lazy"
   />
   <h3 className="text-xl font-bold text-white">MR <span className="text-amber-400">ONE</span> DOLLAR</h3>
 </div>
@@ -1555,6 +1562,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                                 src="https://img.icons8.com/ios-filled/20/ffb74d/marker.png" 
                                 alt="Location" 
                                 className="w-5 h-5 mr-3 mt-1 flex-shrink-0"
+                                loading="lazy"
                             />
                             <div>
                                 <h3 className="text-slate-300 font-medium">Head office</h3>
@@ -1573,6 +1581,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                                 src="https://img.icons8.com/ios-filled/20/ffb74d/phone.png" 
                                 alt="Phone" 
                                 className="w-5 h-5 mr-3 mt-1 flex-shrink-0"
+                                loading="lazy"
                             />
                             <div>
                                 <h3 className="text-slate-300 font-medium">Whatsapp/Call us</h3>
@@ -1589,6 +1598,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                                 src="https://img.icons8.com/ios-filled/20/ffb74d/mail.png" 
                                 alt="Email" 
                                 className="w-5 h-5 mr-3 mt-1 flex-shrink-0"
+                                loading="lazy"
                             />
                             <div>
                                 <h3 className="text-slate-300 font-medium">Email us</h3>
@@ -3077,6 +3087,7 @@ const ProductCard: React.FC<{ product: Product; onAddToCart: (product: Product) 
                         src={currentImageUrl} 
                         alt={product.name}
                         onError={handleImageError}
+                        loading="lazy"
                         className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
