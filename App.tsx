@@ -40,24 +40,25 @@ interface Product extends BaseProduct {
 
 // --- Centralized Data Source ---
 const servicesData: Product[] = [
+    { id: 16, name: "Mr$1 Key Levels", price: 59.99, category: 'Softwares', imageUrl: 'https://i.postimg.cc/KzTTQMgk/Screenshot-2026-08-25-135252-png3.png', description: "Spot Support & Resistance Levels Like a Professional Trader. Stop guessing where the market will turn. Mr$1 Key Levels gives you the exact support and resistance levels that professional traders use to make profitable decisions. Our proprietary Key Level Calculator—built by mathematicians and refined through thousands of market cycles—identifies turning points with precision across daily, weekly, and monthly timeframes. No more staring at charts trying to figure out where price will bounce or break. No more leaving money on the table. What You Get: Daily Key Levels for immediate trading opportunities, Weekly Key Levels for swing trade setups, Monthly Key Levels for identifying major market structure, Mathematically-calculated turning points, not guesswork, The same edge professional traders pay thousands to access. Whether you're day trading, swing trading, or position trading, these levels work across all markets and timeframes. Your entries become more confident. Your exits become more strategic. Your trading becomes professional. Take the guesswork out of technical analysis. Get the key levels the pros rely on.", checkoutUrl: "https://whop.com/mr1dollar-international/mr-1-key-levels/" },
     { id: 14, name: "Diamond 7-Days Prepaid", price: 45.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/dtCTfkRV/DIAMOND-prepaid.png', description: "Get Diamond-level trade ideas for a full week at an affordable prepaid rate. Perfect for traders who want premium trading signals without monthly commitment. Receive daily trade setups, market analysis, and expert insights for 7 days. Weekly subscription.", checkoutUrl: "diamond-prepaid-checkout" },
     { id: 1, name: "Gold High Voltage Trade Ideas", price: 59.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/0y0KHZ2B/GOLD-HIGH-VOLTAGE.jpg', description: "Harness the power of the precious metals market. Receive high-probability trade setups for Gold (XAU/USD), meticulously analyzed by our experts. Perfect for traders looking to capitalize on Gold's volatility and make informed decisions.", checkoutUrl: "gold-high-voltage-checkout" },
     { id: 13, name: "Synthetics trade ideas", price: 59.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/Px46X1yq/SYNTHETICS.jpg', description: "Master synthetic indices trading with our expert analysis. Receive precise trade setups for synthetic instruments, designed for traders seeking consistent profits in this specialized market segment.", checkoutUrl: "synthetics-checkout" },
-    { 
-        id: 2, 
-        name: "Free Trade Ideas", 
-        price: 0, 
-        category: 'Trade Ideas', 
-        imageUrl: '/images/forex-trading.jpg', 
+    {
+        id: 2,
+        name: "Free Trade Ideas",
+        price: 0,
+        category: 'Trade Ideas',
+        imageUrl: '/images/forex-trading.jpg',
         description: "🔥 GET FREE TRADE IDEAS FOR A LIFETIME 🔥",
         isSpecialOffer: true,
         offerSteps: [
-            { 
-                number: 1, 
+            {
+                number: 1,
                 text: <span className="flex items-center">
                     <img src="/images/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-4 w-auto object-contain mr-2" />
                     Register on PrimeXBT
-                </span> 
+                </span>
             },
             { number: 2, text: "Complete KYC verification" },
             { number: 3, text: "Deposit minimum $50 (R800) into your wallet" },
@@ -76,7 +77,7 @@ const servicesData: Product[] = [
     { id: 11, name: "Advanced Mentorship", price: 106.99, category: 'Mentorship', imageUrl: 'https://i.postimg.cc/QCgjx4Pd/Advanced-Mentorship.jpg', description: "Collaborate with the best. Our Advanced Mentorship provides high-level strategic discussion, performance analysis, and psychological coaching to help you break through performance plateaus and reach your peak potential.", checkoutUrl: "advanced-mentorship-checkout" },
     { id: 12, name: "Currencies Strategy", price: 429.99, category: 'Strategy', imageUrl: 'https://i.postimg.cc/Y0MJ8pnh/Currencies-Strategy.jpg', description: "Purchase our proprietary, back-tested currency trading strategy. This is a complete, rule-based system that provides clear entry, exit, and stop-loss parameters, taking the guesswork out of your trading.", checkoutUrl: "currencies-strategy-checkout" },
     { id: 13, name: "NFP Event Access", price: 16.99, category: 'Events', imageUrl: 'https://i.postimg.cc/tCmMntjX/NFP-Event-Access.jpg', description: "Join us for a live trading session during the Non-Farm Payroll (NFP) announcement. Learn how to navigate one of the market's most volatile events with expert guidance, pre-release analysis, and real-time trade execution.", checkoutUrl: "nfp-event-access-checkout" },
-    { id: 15, name: "Branded Merchandise", price: 59.99, category: 'Uncategorized', imageUrl: 'https://i.postimg.cc/0NRkQHZG/Merch.jpg', description: "Represent the Mr.$1 community with our exclusive branded merchandise. High-quality apparel and accessories for the trader who refuses to be average. Show off your commitment to staying blue and taking profit.", checkoutUrl: "branded-merchandise-checkout" }
+    { id: 15, name: "Branded Merchandise", price: 59.99, category: 'Branded Merchandise', imageUrl: 'https://i.postimg.cc/0NRkQHZG/Merch.jpg', description: "Represent the Mr.$1 community with our exclusive branded merchandise. High-quality apparel and accessories for the trader who refuses to be average. Show off your commitment to staying blue and taking profit.", checkoutUrl: "branded-merchandise-checkout" }
 ];
 
 const testimonialsData = [
@@ -261,7 +262,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0">
                         <a href="#" onClick={(e) => handleNavClick(e, 'home')} className="block cursor-pointer transform hover:scale-105 transition-transform duration-300">
-                            <img src="https://i.postimg.cc/J4LgGJnS/Horizontal_Inverse.png" alt="Mr One Dollar International Logo" className="h-12 w-auto" loading="eager" />
+                            <img src="https://i.postimg.cc/J4LgGJnS/Horizontal_Inverse.png" alt="Mr One Dollar International Logo" className="h-12 w-auto" />
                         </a>
                     </div>
                     <div className="hidden md:block">
@@ -407,7 +408,6 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage, currentPage }) => {
                                             src="https://i.postimg.cc/7YZjFzbK/icons8-zoom-logo-34-1.png"
                                             alt="Zoom Support"
                                             className="h-[34px] w-[34px] object-contain"
-                                            loading="lazy"
                                         />
                                     </span>
                                     <span className="text-sm">Instant Zoom Support</span>
@@ -427,7 +427,6 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage, currentPage }) => {
     src="https://i.postimg.cc/Gh5YKvKT/Badge_White.png" 
     alt="MR1Dollar Badge" 
     className="w-6 h-6 object-contain"
-    loading="lazy"
   />
 </div>
                                                 <p className="mt-1 text-sm text-slate-300">Need help? Join our live support session for immediate assistance.</p>
@@ -715,7 +714,6 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                                         src={partner.logoUrl} 
                                                         alt={`${partner.name} logo`} 
                                                         className="h-8 w-auto"
-                                                        loading="lazy"
                                                     />
                                                     <span className="px-2 py-1 text-xs font-medium rounded-full bg-slate-700/50 text-slate-300">
                                                         Broker
@@ -820,7 +818,6 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                                     src={partner.logoUrl} 
                                                     alt={`${partner.name} logo`} 
                                                     className="h-8 w-auto"
-                                                    loading="lazy"
                                                 />
                                                 <span className="px-2 py-1 text-xs font-medium rounded-full bg-slate-700/50 text-slate-300">
                                                     Prop Firm
@@ -940,7 +937,6 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                     src="https://fundedaward.com/cdn/shop/files/FA_vector_logo.png?height=54&v=1767254179" 
                                     alt="FundedAward" 
                                     className="h-8 w-auto"
-                                    loading="lazy"
                                 />
                                 <span className="px-2 py-1 text-xs font-medium rounded-full bg-slate-700/50 text-slate-300">
                                     Certificate Framing
@@ -980,7 +976,6 @@ const PropFirms: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setCurr
                                             src="https://fundedaward.com/cdn/shop/files/Bundle.png?v=1763145691" 
                                             alt="Certificate Framing Bundle" 
                                             className="w-full h-32 object-cover rounded border border-slate-700"
-                                            loading="lazy"
                                         />
                                     </div>
                                     <div className="flex items-center justify-between">
@@ -1176,7 +1171,7 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                                             }}
                                                             className={`inline-flex items-center justify-center gap-2 ${canUseStep2 ? 'bg-transparent border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black' : 'bg-gray-600 border-2 border-gray-600 text-gray-400 cursor-not-allowed'} font-bold py-2 px-4 rounded-md transition-colors duration-200 text-sm`}
                                                         >
-                                                            <img src="https://i.ibb.co/YGPkfR7/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-5 w-auto object-contain" loading="lazy" />
+                                                            <img src="https://i.ibb.co/YGPkfR7/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-5 w-auto object-contain" />
                                                             Register on PrimeXBT
                                                         </a>
                                                     </div>
@@ -1546,7 +1541,6 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
     src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" 
     alt="MR ONE DOLLAR Logo" 
     className="w-8 h-8 object-contain"
-    loading="lazy"
   />
   <h3 className="text-xl font-bold text-white">MR <span className="text-amber-400">ONE</span> DOLLAR</h3>
 </div>
@@ -1562,7 +1556,6 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                                 src="https://img.icons8.com/ios-filled/20/ffb74d/marker.png" 
                                 alt="Location" 
                                 className="w-5 h-5 mr-3 mt-1 flex-shrink-0"
-                                loading="lazy"
                             />
                             <div>
                                 <h3 className="text-slate-300 font-medium">Head office</h3>
@@ -1581,7 +1574,6 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                                 src="https://img.icons8.com/ios-filled/20/ffb74d/phone.png" 
                                 alt="Phone" 
                                 className="w-5 h-5 mr-3 mt-1 flex-shrink-0"
-                                loading="lazy"
                             />
                             <div>
                                 <h3 className="text-slate-300 font-medium">Whatsapp/Call us</h3>
@@ -1598,7 +1590,6 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                                 src="https://img.icons8.com/ios-filled/20/ffb74d/mail.png" 
                                 alt="Email" 
                                 className="w-5 h-5 mr-3 mt-1 flex-shrink-0"
-                                loading="lazy"
                             />
                             <div>
                                 <h3 className="text-slate-300 font-medium">Email us</h3>
@@ -3087,7 +3078,6 @@ const ProductCard: React.FC<{ product: Product; onAddToCart: (product: Product) 
                         src={currentImageUrl} 
                         alt={product.name}
                         onError={handleImageError}
-                        loading="lazy"
                         className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
@@ -3202,12 +3192,12 @@ const ProductCard: React.FC<{ product: Product; onAddToCart: (product: Product) 
                                 )}
                                 {product.id === 15 && (
                                     <span className="bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded-full border border-blue-500/30">
-                                        once off/year access
+                                        once off
                                     </span>
                                 )}
                                 {product.id === 16 && (
                                     <span className="bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded-full border border-blue-500/30">
-                                        once off/year access
+                                        monthly
                                     </span>
                                 )}
                             </p>
@@ -3250,9 +3240,9 @@ const ProductCard: React.FC<{ product: Product; onAddToCart: (product: Product) 
                                 Only available to students who have completed our course
                             </div>
                         )}
-                        <a 
-                            href={product.checkoutUrl} 
-                            target={product.checkoutUrl.startsWith('http') ? "_blank" : "_self"} 
+                        <a
+                            href={product.checkoutUrl}
+                            target={product.checkoutUrl.startsWith('http') ? "_blank" : "_self"}
                             rel={product.checkoutUrl.startsWith('http') ? "noopener noreferrer" : undefined}
                             onClick={(e) => {
                                 if (product.checkoutUrl === 'diamond-prepaid-checkout') {
@@ -3427,7 +3417,7 @@ const ServicesPage: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ setC
         }
     }, []);
 
-    const itemsPerPage = 12;
+    const itemsPerPage = 14;
     
     // Get Platinum package (ID: 2)
     const platinumPackage = products.find(p => p.id === 2);
@@ -3531,8 +3521,12 @@ const updatedPlatinumPackage = platinumPackage ? {
     const filteredProducts = paginatedProducts;
 
     // Categorize products
-    const softwares = selectedCategory === 'Softwares' || !selectedCategory 
-        ? filteredProducts.filter(p => p.category === 'Softwares') 
+    const softwares = selectedCategory === 'Softwares' || !selectedCategory
+        ? filteredProducts.filter(p => p.category === 'Softwares')
+        : [];
+
+    const brandedMerchandise = selectedCategory === 'Branded Merchandise' || !selectedCategory
+        ? filteredProducts.filter(p => p.category === 'Branded Merchandise')
         : [];
         
     const tradeIdeas = selectedCategory === 'Trade Ideas' || !selectedCategory 
@@ -3555,11 +3549,11 @@ const updatedPlatinumPackage = platinumPackage ? {
         ? filteredProducts.filter(p => p.category === 'Events')
         : [];
         
-    const otherProducts = !['Softwares', 'Trade Ideas', 'Mentorship', 'Courses', 'Strategy', 'Events'].includes(selectedCategory || '') 
-        ? filteredProducts.filter(p => 
-            !['Softwares', 'Trade Ideas', 'Courses', 'Mentorship', 'Strategy', 'Events'].includes(p.category) &&
+    const otherProducts = !['Softwares', 'Branded Merchandise', 'Trade Ideas', 'Mentorship', 'Courses', 'Strategy', 'Events'].includes(selectedCategory || '')
+        ? filteredProducts.filter(p =>
+            !['Softwares', 'Branded Merchandise', 'Trade Ideas', 'Courses', 'Mentorship', 'Strategy', 'Events'].includes(p.category) &&
             p.id !== 2
-        ) 
+        )
         : [];
     
     const cartTotal = cart.reduce((total, product) => total + product.price, 0);
@@ -4015,8 +4009,21 @@ const updatedPlatinumPackage = platinumPackage ? {
                                 {/* Other Products */}
                                 {otherProducts.length > 0 && (
                                     <div className="mb-12">
-                                        <h2 className="text-2xl font-bold text-white mb-6">Softwares</h2>
+                                        <h2 className="text-2xl font-bold text-white mb-6">Other Products</h2>
                                         {renderProductGrid(otherProducts)}
+                                    </div>
+                                )}
+
+                                {/* Branded Merchandise Section */}
+                                {(selectedCategory === 'Branded Merchandise' || !selectedCategory) && brandedMerchandise.length > 0 && (
+                                    <div className="mb-12">
+                                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                                            <svg className="w-6 h-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                            </svg>
+                                            Branded Merchandise
+                                        </h2>
+                                        {renderProductGrid(brandedMerchandise)}
                                     </div>
                                 )}
 
