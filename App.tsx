@@ -35,15 +35,14 @@ interface Product extends BaseProduct {
     discountedPrice?: number;
     productId?: string;
     checkoutLink?: string;
+    badge?: string;
     // Additional properties specific to Product can be added here
 }
 
 // --- Centralized Data Source ---
 const servicesData: Product[] = [
-    { id: 16, name: "Mr$1 Key Levels", price: 59.99, category: 'Softwares', imageUrl: 'https://i.postimg.cc/KzTTQMgk/Screenshot-2026-08-25-135252-png3.png', description: "Spot Support & Resistance Levels Like a Professional Trader. Stop guessing where the market will turn. Mr$1 Key Levels gives you the exact support and resistance levels that professional traders use to make profitable decisions. Our proprietary Key Level Calculator—built by mathematicians and refined through thousands of market cycles—identifies turning points with precision across daily, weekly, and monthly timeframes. No more staring at charts trying to figure out where price will bounce or break. No more leaving money on the table. What You Get: Daily Key Levels for immediate trading opportunities, Weekly Key Levels for swing trade setups, Monthly Key Levels for identifying major market structure, Mathematically-calculated turning points, not guesswork, The same edge professional traders pay thousands to access. Whether you're day trading, swing trading, or position trading, these levels work across all markets and timeframes. Your entries become more confident. Your exits become more strategic. Your trading becomes professional. Take the guesswork out of technical analysis. Get the key levels the pros rely on.", checkoutUrl: "https://whop.com/mr1dollar-international/mr-1-key-levels/" },
-    { id: 14, name: "Diamond 7-Days Prepaid", price: 45.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/dtCTfkRV/DIAMOND-prepaid.png', description: "Get Diamond-level trade ideas for a full week at an affordable prepaid rate. Perfect for traders who want premium trading signals without monthly commitment. Receive daily trade setups, market analysis, and expert insights for 7 days. Weekly subscription.", checkoutUrl: "diamond-prepaid-checkout" },
-    { id: 1, name: "Gold High Voltage Trade Ideas", price: 59.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/0y0KHZ2B/GOLD-HIGH-VOLTAGE.jpg', description: "Harness the power of the precious metals market. Receive high-probability trade setups for Gold (XAU/USD), meticulously analyzed by our experts. Perfect for traders looking to capitalize on Gold's volatility and make informed decisions.", checkoutUrl: "gold-high-voltage-checkout" },
-    { id: 13, name: "Synthetics trade ideas", price: 59.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/Px46X1yq/SYNTHETICS.jpg', description: "Master synthetic indices trading with our expert analysis. Receive precise trade setups for synthetic instruments, designed for traders seeking consistent profits in this specialized market segment.", checkoutUrl: "synthetics-checkout" },
+    { id: 16, name: "Key Levels Calculator", price: 59.99, category: 'Softwares', imageUrl: 'https://i.postimg.cc/j5R11GrM/remove-Key-Lvel-Zones-text-202608260258.jpg', description: "Spot Support & Resistance Levels Like a Professional Trader. Stop guessing where the market will turn. Key Levels Calculator gives you the exact support and resistance levels that professional traders use to make profitable decisions. Our proprietary Key Level Calculator—built by mathematicians and refined through thousands of market cycles—identifies turning points with precision across daily, weekly, and monthly timeframes. No more staring at charts trying to figure out where price will bounce or break. No more leaving money on the table. What You Get: Daily Key Levels for immediate trading opportunities, Weekly Key Levels for swing trade setups, Monthly Key Levels for identifying major market structure, Mathematically-calculated turning points, not guesswork, The same edge professional traders pay thousands to access. Whether you're day trading, swing trading, or position trading, these levels work across all markets and timeframes. Your entries become more confident. Your exits become more strategic. Your trading becomes professional. Take the guesswork out of technical analysis. Get the key levels the pros rely on.", checkoutUrl: "https://whop.com/mr1dollar-international/mr-1-key-levels/" },
+    { id: 18, name: "Advanced Key Levels Calculator", price: 119.98, category: 'Softwares', imageUrl: 'https://i.postimg.cc/j2wCznmT/Remove-big-logo-top-202608260249.jpg', description: "Spot Support & Resistance Levels Like a Professional Trader. Stop guessing where the market will turn. Key Levels Calculator gives you the exact support and resistance levels that professional traders use to make profitable decisions. Our proprietary Key Level Calculator—built by mathematicians and refined through thousands of market cycles—identifies turning points with precision across daily, weekly, and monthly timeframes. No more staring at charts trying to figure out where price will bounce or break. No more leaving money on the table. What You Get: Daily Key Levels for immediate trading opportunities, Weekly Key Levels for swing trade setups, Monthly Key Levels for identifying major market structure, Mathematically-calculated turning points, not guesswork, The same edge professional traders pay thousands to access. Whether you're day trading, swing trading, or position trading, these levels work across all markets and timeframes. Your entries become more confident. Your exits become more strategic. Your trading becomes professional. Take the guesswork out of technical analysis. Get the key levels the pros rely on.", badge: "bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded-full border border-blue-500/30", checkoutUrl: "https://whop.com/mr1dollar-international/advanced-key-levels-calculator" },
     {
         id: 2,
         name: "Free Trade Ideas",
@@ -53,31 +52,21 @@ const servicesData: Product[] = [
         description: "🔥 GET FREE TRADE IDEAS FOR A LIFETIME 🔥",
         isSpecialOffer: true,
         offerSteps: [
-            {
-                number: 1,
-                text: <span className="flex items-center">
-                    <img src="/images/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-4 w-auto object-contain mr-2" />
-                    Register on PrimeXBT
-                </span>
-            },
+            { number: 1, text: "Fill Out Contact Details" },
             { number: 2, text: "Complete KYC verification" },
-            { number: 3, text: "Deposit minimum $50 (R800) into your wallet" },
-            { number: 4, text: "WhatsApp Nomii with proof to claim your free month" }
+            { number: 3, text: "WhatsApp Nomii with proof to claim your free month" }
         ],
         whatsappLink: "https://wa.me/27676923876?text=Hi%20Nomii%2C%20I've%20completed%20my%20PrimeXBT%20registration%20and%20funded%20with%20a%20minimum%20of%20%2410.%20Here's%20my%20proof%20of%20funding%3A%20[YOUR_PROOF_HERE]"
     },
-    { id: 3, name: "Diamond Trade Ideas", price: 179.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/Qx6RkZpD/DIAMOND.jpg', description: "Our elite subscription for serious traders. Diamond members receive all Platinum benefits plus access to exclusive inner-circle trade ideas, advanced market commentary, and priority support from our top analysts. Initial payment of $179, then just $89.50/month (50% discount) for continued access.", checkoutUrl: "diamond-trade-ideas-checkout" },
-    { id: 4, name: "Private Wealth VIP Black Trade Ideas", price: 1272.99, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/YSQnP5mq/PRIVATE-WEALTH-VIP-BLACK.jpg', description: "The ultimate trading experience. VIP Black is a bespoke service for high-net-worth individuals, offering personalized trade strategies, direct access to our head traders, and portfolio management insights. By application only.", checkoutUrl: "private-wealth-vip-black-checkout" },
-    { id: 5, name: "Beginners Course", price: 339.99, category: 'Courses', imageUrl: 'https://i.postimg.cc/66VKZPjZ/Beginners-Course.jpg', description: "New to Forex? This is your starting point. Our comprehensive Beginners Course covers everything from the absolute basics of currency pairs to setting up your trading platform and executing your first trades with confidence.", checkoutUrl: "beginners-course-checkout" },
-    { id: 6, name: "Intermediate Course", price: 499.99, category: 'Courses', imageUrl: 'https://i.postimg.cc/0jkBDVjs/Intermediate-Course.jpg', description: "Ready to move beyond the basics? This course dives into technical analysis, chart patterns, risk management, and trading psychology. Develop the skills needed to build a consistently profitable trading strategy.", checkoutUrl: "intermediate-course-checkout" },
-    { id: 7, name: "Advanced Course", price: 719.99, category: 'Courses', imageUrl: 'https://i.postimg.cc/bNHvzrcd/Advanced-Course.jpg', description: "For the experienced trader looking for an edge. Explore advanced institutional strategies, market structure, smart money concepts, and complex indicators to refine your approach and elevate your trading to an expert level.", checkoutUrl: "advanced-course-checkout" },
-    { id: 8, name: "Full Course + Free Tradecation", price: 1189.99, category: 'Courses', imageUrl: 'https://i.postimg.cc/YSFZH4T2/Full-Course-Free-Tradecation.jpg', description: "The ultimate trading education package. This all-in-one course combines our Beginner, Intermediate, and Advanced modules. Master everything from fundamental principles to complex institutional strategies and become a well-rounded, profitable trader. Includes a FREE Tradecation (valued at $900) - limited time offer!", checkoutUrl: "full-course-tradecation-checkout" },
-    { id: 9, name: "Beginner Mentorship", price: 27.99, category: 'Mentorship', imageUrl: 'https://i.postimg.cc/kgYq4tjW/Beginner-Mentorship.jpg', description: "Accelerate your learning curve with personalized guidance. Our Beginner Mentorship pairs you with an experienced trader to review your trades, answer your questions, and help you build a solid trading foundation and mindset.", checkoutUrl: "beginner-mentorship-checkout" },
-    { id: 10, name: "Intermediate Mentorship", price: 53.99, category: 'Mentorship', imageUrl: 'https://i.postimg.cc/XqsD89BR/Intermediate-Mentorship.jpg', description: "Refine your strategy with expert feedback. This mentorship program is designed for traders who have a strategy but need help with consistency, discipline, and navigating live market conditions with a professional.", checkoutUrl: "intermediate-mentorship-checkout" },
-    { id: 11, name: "Advanced Mentorship", price: 106.99, category: 'Mentorship', imageUrl: 'https://i.postimg.cc/QCgjx4Pd/Advanced-Mentorship.jpg', description: "Collaborate with the best. Our Advanced Mentorship provides high-level strategic discussion, performance analysis, and psychological coaching to help you break through performance plateaus and reach your peak potential.", checkoutUrl: "advanced-mentorship-checkout" },
-    { id: 12, name: "Currencies Strategy", price: 429.99, category: 'Strategy', imageUrl: 'https://i.postimg.cc/Y0MJ8pnh/Currencies-Strategy.jpg', description: "Purchase our proprietary, back-tested currency trading strategy. This is a complete, rule-based system that provides clear entry, exit, and stop-loss parameters, taking the guesswork out of your trading.", checkoutUrl: "currencies-strategy-checkout" },
-    { id: 13, name: "NFP Event Access", price: 16.99, category: 'Events', imageUrl: 'https://i.postimg.cc/tCmMntjX/NFP-Event-Access.jpg', description: "Join us for a live trading session during the Non-Farm Payroll (NFP) announcement. Learn how to navigate one of the market's most volatile events with expert guidance, pre-release analysis, and real-time trade execution.", checkoutUrl: "nfp-event-access-checkout" },
-    { id: 15, name: "Branded Merchandise", price: 59.99, category: 'Branded Merchandise', imageUrl: 'https://i.postimg.cc/0NRkQHZG/Merch.jpg', description: "Represent the Mr.$1 community with our exclusive branded merchandise. High-quality apparel and accessories for the trader who refuses to be average. Show off your commitment to staying blue and taking profit.", checkoutUrl: "branded-merchandise-checkout" }
+    { id: 3, name: "Diamond Trade Ideas", price: 43.18, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/Qx6RkZpD/DIAMOND.jpg', description: "Our elite subscription for serious traders. Diamond members receive all Platinum benefits plus access to exclusive inner-circle trade ideas, advanced market commentary, and priority support from our top analysts.", badge: "bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded-full border border-blue-500/30", checkoutUrl: "https://whop.com/mr1dollar-international/diamond-trade-ideas-7b" },
+    { id: 4, name: "Private Wealth VIP Black Trade Ideas", price: 1881.57, category: 'Trade Ideas', imageUrl: 'https://i.postimg.cc/YSQnP5mq/PRIVATE-WEALTH-VIP-BLACK.jpg', description: "For traders who refuse to stay average. Join an exclusive circle of disciplined traders and investors focused on growing wealth, protecting capital, and building long-term financial freedom. Receive direct mentorship, advanced strategies, and priority access to MrOneDollar opportunities unavailable to the public. Membership is limited and available by application only. What You'll Receive: Direct mentorship & live trading sessions, Advanced institutional trading strategies, Elite trading psychology coaching, Private network of high-performing traders & entrepreneurs, Priority support & exclusive opportunities, Unlimited access to all premium resources. REQUIREMENTS: Reserved for traders with $100,000+ Funded Account or $10,000+ Personal Trading Account.", checkoutUrl: "https://whop.com/mr1dollar-international/private-wealth-vipblack/" },
+    { id: 5, name: "Beginners Course", price: 194.70, category: 'Courses', imageUrl: 'https://i.postimg.cc/66VKZPjZ/Beginners-Course.jpg', description: "BEGINNERS - FOREX FOUNDATIONS. Learn to Trade with Confidence. Understand how the forex market really works, Read charts like a professional, Identify high-probability trading opportunities, Build a solid foundation for consistent growth.", checkoutUrl: "https://whop.com/mr1dollar-international/beginners-course-0f/" },
+    { id: 6, name: "Intermediate Course", price: 259.60, category: 'Courses', imageUrl: 'https://i.postimg.cc/0jkBDVjs/Intermediate-Course.jpg', description: "INTERMEDIATE - BUILDING CONSISTENCY & DISCIPLINE. Turn Knowledge into Profits. Join live trading sessions with experienced mentors, Master precise trade entries and exits, Develop disciplined risk management, 3 Months of Premium Trade Ideas Included.", checkoutUrl: "https://whop.com/mr1dollar-international/intermediate-course-b1/" },
+    { id: 17, name: "Advanced Course", price: 324.50, category: 'Courses', imageUrl: 'https://i.postimg.cc/bNHvzrcd/Advanced-Course.jpg', description: "ADVANCED - ELITE TRADER. Trade with Institutional Precision. Advanced MrOneDollar trading Concepts & market confluence, Live mentorship and market breakdown, Professional trade management techniques, 3 Months of Premium Trade Ideas Included.", checkoutUrl: "https://whop.com/mr1dollar-international/advanced-course-fe/" },
+    { id: 7, name: "Online Full Course", price: 649, category: 'Courses', imageUrl: 'https://i.postimg.cc/6Q91wcwD/Intermediate-Mentorship.png', description: "Master Trading from Beginner to Professional. Everything you need to develop your trading knowledge and build a structured approach to the financial markets — all in one complete educational programme. Learn market analysis, trading concepts, risk management and practical techniques through structured lessons and live educational sessions with experienced mentors. What You Get: Beginner, Intermediate & Advanced Modules, Live Educational Sessions with Mentors, Practical Market Analysis & Trading Education, Access to Educational Trading Tools, Educational Trade Ideas, FREE $15,000 Prop Firm Challenge Account. Only $649. One payment. Lifetime access to the educational programme. Start Your Trading Education Today. *Terms and conditions apply. The programme is for educational purposes and does not constitute financial advice or a recommendation to buy or sell any financial product.", checkoutUrl: "https://whop.com/mr1dollar-international/online-full-course" },
+    { id: 8, name: "Full Course + Free Tradecation", price: 1189.99, category: 'Courses', imageUrl: 'https://i.postimg.cc/YSFZH4T2/Full-Course-Free-Tradecation.jpg', description: "The ultimate trading education package. This all-in-one course combines our Beginner, Intermediate, and Advanced modules. Master everything from fundamental principles to complex institutional strategies and become a well-rounded, profitable trader. Includes a FREE Tradecation (valued at $900) - limited time offer.", checkoutUrl: "full-course-tradecation-checkout" },
+    { id: 12, name: "NFP Event Access", price: 16.99, category: 'Events', imageUrl: 'https://i.postimg.cc/tCmMntjX/NFP-Event-Access.jpg', description: "Join us for a live trading session during the Non-Farm Payroll (NFP) announcement. Learn how to navigate one of the market's most volatile events with expert guidance, pre-release analysis, and real-time trade execution.", checkoutUrl: "nfp-event-access-checkout" },
+    { id: 13, name: "Branded Merchandise", price: 59.99, category: 'Branded Merchandise', imageUrl: 'https://i.postimg.cc/0NRkQHZG/Merch.jpg', description: "Represent the Mr.$1 community with our exclusive branded merchandise. High-quality apparel and accessories for the trader who refuses to be average. Show off your commitment to staying blue and taking profit.", checkoutUrl: "branded-merchandise-checkout" }
 ];
 
 const testimonialsData = [
@@ -390,7 +379,7 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage, currentPage }) => {
                                 className="w-full sm:w-auto text-center border-2 border-amber-400 text-amber-400 font-bold py-3 px-6 sm:px-8 rounded-md hover:bg-amber-400 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 btn-secondary flex items-center justify-center gap-2"
                             >
                                 <span>💎</span>
-                                <span>Diamond Trade Ideas at $179</span>
+                                <span>Diamond Trade Ideas</span>
                             </a>
                         </div>
                         {currentPage === 'home' && (
@@ -1031,7 +1020,6 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
     const [completedSteps, setCompletedSteps] = useState<number[]>([]);
     const [activeStep, setActiveStep] = useState<number>(1); // highest visually unlocked step
     const [whatsAppBounce, setWhatsAppBounce] = useState<boolean>(false);
-    const step2Ref = useRef<HTMLDivElement>(null);
 
     // Check for return_to parameter on component mount
     useEffect(() => {
@@ -1044,11 +1032,6 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
             // Mark step 1 as completed
             setCompletedSteps(prev => (prev.includes(1) ? prev : [...prev, 1]));
             setActiveStep(2);
-            
-            // Scroll to step 2 after a short delay to allow the section to open
-            setTimeout(() => {
-                step2Ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 100);
             
             // Clean up the URL
             window.history.replaceState({}, '', window.location.pathname);
@@ -1065,20 +1048,16 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
         setActiveStep(prev => (step > prev ? step : prev));
     };
 
-    const canUseStep2 = hasStep(1);
-    const canUseStep3 = hasStep(2);
-    const canUseStep4 = hasStep(3);
-    const canUseWhatsApp = hasStep(4);
+    const canUseWhatsApp = hasStep(2);
 
     const handleKYCYes = () => {
-        if (!canUseStep3) return;
-        // Mark step 3 as completed and visually unlock steps 4 and 5
-        markStepCompleted(3);
-        unlockUpTo(5);
+        // Mark step 2 as completed and visually unlock step 3
+        markStepCompleted(2);
+        unlockUpTo(3);
         setWhatsAppBounce(true);
     };
 
-    const progressPercentage = (completedSteps.length / 5) * 100; // 5 total steps
+    const progressPercentage = (completedSteps.length / 3) * 100; // 3 total steps
     const cardBase = 'p-4 rounded-lg transition-all duration-300';
     const cardActive = 'bg-gray-800/50';
     const cardInactive = 'opacity-50';
@@ -1114,13 +1093,13 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                 ></div>
                             </div>
                             <div className="text-right text-xs text-gray-400 mb-2">
-                                {completedSteps.length} of 5 steps completed
+                                {completedSteps.length} of 3 steps completed
                             </div>
                             <div className="text-center text-xs text-amber-300/80 mb-4 px-4 py-2 bg-amber-500/10 rounded-lg border border-amber-400/20">
                                 <svg className="w-4 h-4 inline-block mr-1 -mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                                 </svg>
-                                Important: You must complete all 5 steps to receive your free Trade Ideas. Incomplete steps will result in no access.
+                                Important: You must complete all 3 steps to receive your free Trade Ideas. Incomplete steps will result in no access.
                             </div>
 
                             <div className="flex flex-col md:flex-row gap-8">
@@ -1130,15 +1109,15 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                         <div className="flex items-start">
                                             <div className={`${activeStep >= 1 ? 'bg-amber-500' : 'bg-gray-600'} text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-4`}>1</div>
                                             <div className="flex-1">
-                                                <h4 className="font-semibold">Fill Out Contact Details</h4>
+                                                <h4 className="font-semibold mb-3">Fill Out Contact Details</h4>
                                                 <p className="text-gray-300 text-sm mb-2">Complete the form to get started with your free Trade Ideas</p>
                                                 <a 
-                                                    href="#"
+                                                    href="https://mr1-free-ideas.pages.dev/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
                                                     onClick={(e) => {
-                                                        e.preventDefault();
                                                         markStepCompleted(1);
                                                         unlockUpTo(2);
-                                                        window.location.href = `https://forms.gle/7hgB2Gmr9doQEmy99`;
                                                     }}
                                                     className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-black font-bold py-2 px-4 rounded-md transition-all duration-300 ease-in-out transform hover:scale-105"
                                                 >
@@ -1149,64 +1128,25 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                     </div>
 
                                     {/* Step 2 */}
-                                    <div ref={step2Ref} className={`${cardBase} ${activeStep >= 2 ? cardActive : cardInactive}`}>
+                                    <div className={`${cardBase} ${activeStep >= 2 ? cardActive : cardInactive}`}>
                                         <div className="flex items-start">
                                             <div className={`${activeStep >= 2 ? 'bg-amber-500' : 'bg-gray-600'} text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-4`}>2</div>
-                                            <div className="flex-1">
-                                                <h4 className="font-semibold mb-3">Register Your Trading Account</h4>
-                                                <div className="flex flex-col gap-3">
-                                                    <div className="flex flex-col sm:flex-row gap-3">
-                                                        <a 
-                                                            href="https://go.primexbt.direct/visit/?bta=41494&brand=primexbt" 
-                                                            target="_blank" 
-                                                            rel="noopener noreferrer"
-                                                            onClick={(e) => {
-                                                                if (!canUseStep2) {
-                                                                    e.preventDefault();
-                                                                    e.stopPropagation();
-                                                                    return;
-                                                                }
-                                                                markStepCompleted(2);
-                                                                unlockUpTo(3);
-                                                            }}
-                                                            className={`inline-flex items-center justify-center gap-2 ${canUseStep2 ? 'bg-transparent border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black' : 'bg-gray-600 border-2 border-gray-600 text-gray-400 cursor-not-allowed'} font-bold py-2 px-4 rounded-md transition-colors duration-200 text-sm`}
-                                                        >
-                                                            <img src="https://i.ibb.co/YGPkfR7/Prime-XBT-Logo.png" alt="PrimeXBT" className="h-5 w-auto object-contain" />
-                                                            Register on PrimeXBT
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Step 3 */}
-                                    <div className={`${cardBase} ${activeStep >= 3 ? cardActive : cardInactive}`}>
-                                        <div className="flex items-start">
-                                            <div className={`${activeStep >= 3 ? 'bg-amber-500' : 'bg-gray-600'} text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-4`}>3</div>
                                             <div className="flex-1">
                                                 <h4 className="font-semibold">Complete KYC Verification</h4>
                                                 <p className="text-gray-300 text-sm mb-2">Have you completed the broker's KYC verification?</p>
                                                 <div className="flex gap-3">
                                                     <button 
                                                         onClick={handleKYCYes}
-                                                        className={`px-4 py-2 rounded-md font-medium ${canUseStep3 ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-600 cursor-not-allowed'} text-white`}
-                                                        disabled={!canUseStep3}
+                                                        className="px-4 py-2 rounded-md font-medium bg-green-600 hover:bg-green-700 text-white"
                                                     >
                                                         Yes, I've completed KYC
                                                     </button>
                                                     <button 
                                                         onClick={(e) => {
                                                             e.preventDefault();
-                                                            if (!canUseStep3) return;
                                                             window.open('https://youtu.be/xaTeSbbXn9g', '_blank');
                                                         }}
-                                                        className={`px-4 py-2 rounded-md font-medium ${
-                                                            canUseStep3 
-                                                                ? 'bg-red-600 hover:bg-red-700' 
-                                                                : 'bg-gray-600 text-gray-400 cursor-not-allowed'
-                                                        } text-white`}
-                                                        disabled={!canUseStep3}
+                                                        className="px-4 py-2 rounded-md font-medium bg-red-600 hover:bg-red-700 text-white"
                                                     >
                                                         No, show me how
                                                     </button>
@@ -1263,23 +1203,10 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                 </div>
                             </div>
 
-                            {/* Step 4 */}
-                            <div className={`${cardBase} ${activeStep >= 4 ? cardActive : cardInactive} mt-6`}>
+                            {/* Step 3 */}
+                            <div className={`${cardBase} ${activeStep >= 3 ? cardActive : cardInactive} mt-4`}>
                                 <div className="flex items-start">
-                                    <div className={`${activeStep >= 4 ? 'bg-amber-500' : 'bg-gray-600'} text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-4`}>4</div>
-                                    <div className="flex-1">
-                                        <h4 className="font-semibold">Fund Your Account</h4>
-                                        <div className="flex justify-between items-center w-full">
-                                            <span className="text-gray-300 text-sm">Deposit minimum $10 (R179) into your wallet</span>
-                                                                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Step 5 */}
-                            <div className={`${cardBase} ${activeStep >= 5 ? cardActive : cardInactive} mt-4`}>
-                                <div className="flex items-start">
-                                    <div className={`${activeStep >= 5 ? 'bg-amber-500' : 'bg-gray-600'} text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-4`}>5</div>
+                                    <div className={`${activeStep >= 3 ? 'bg-amber-500' : 'bg-gray-600'} text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-4`}>3</div>
                                     <div className="flex-1">
                                         <h4 className="font-semibold">Claim Your Free Month</h4>
                                         <a 
@@ -1293,9 +1220,9 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                                     return;
                                                 }
                                                 setWhatsAppBounce(false);
-                                                markStepCompleted(5);
+                                                markStepCompleted(3);
                                             }}
-                                            className={`inline-flex items-center justify-center gap-2 ${activeStep >= 5 ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-600 cursor-not-allowed'} text-white font-bold py-2 px-4 rounded-md transition-all duration-300 ease-in-out ${whatsAppBounce ? 'animate-bounce' : ''}`}
+                                            className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition-all duration-300 ease-in-out animate-bounce"
                                         >
                                             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                                                 <path d="M17.498 14.382l-.002-.001-1.22-1.11c-.5-.4-1.12-.65-1.79-.65h-.01c-1.95 0-3.73 1.17-5.12 3.02-.38.5-.97.8-1.62.8h-.01c-1.23 0-2.23-1.01-2.23-2.24v-8.5c0-1.23 1-2.24 2.24-2.24h11.52c1.23 0 2.24 1.01 2.24 2.24v6.7c0 .86-.49 1.65-1.27 2.04z"/>
@@ -1303,7 +1230,6 @@ const PromoSection: React.FC<PromoSectionProps> = ({ id }) => {
                                             </svg>
                                             WhatsApp Nomii with Proof
                                         </a>
-                                        <p className="text-xs text-gray-400 mt-1">Click to open WhatsApp with pre-filled message</p>
                                     </div>
                                 </div>
                             </div>
@@ -1662,6 +1588,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('home'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Home</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('about'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">About Us</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('services'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Services</a>
+                    <a href="https://mr1-get-the-app.pages.dev/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Download Key levels app here</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('terms'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Terms</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('privacy'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Privacy Policy</a>
                 </div>
@@ -3118,7 +3045,16 @@ const ProductCard: React.FC<{ product: Product; onAddToCart: (product: Product) 
                     </button>
                 </div>
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? 'max-h-screen mt-2' : 'max-h-0'}`}>
-                    <p className="text-slate-400 text-sm mb-3">{product.description}</p>
+                    <div className="text-slate-400 text-sm mb-3 leading-relaxed whitespace-pre-line space-y-2">
+                        {product.description.split('. ').map((sentence, index) => (
+                            sentence.trim() && (
+                                <p key={index} className="flex items-start">
+                                    <span className="text-amber-400 mr-2">•</span>
+                                    <span>{sentence}{index !== product.description.split('. ').length - 1 ? '.' : ''}</span>
+                                </p>
+                            )
+                        ))}
+                    </div>
                     {product.isSpecialOffer && product.offerSteps && (
                         <div className="space-y-3 mt-3">
                             <h4 className="text-amber-400 font-semibold">Follow These Simple Steps:</h4>
@@ -3173,21 +3109,24 @@ const ProductCard: React.FC<{ product: Product; onAddToCart: (product: Product) 
                         <div>
                             <p className="text-amber-400 text-xl font-bold flex items-center gap-2">
                                 ${product.price.toFixed(2)}
-                                <span className="bg-amber-500/20 text-amber-300 text-xs font-medium px-2 py-1 rounded-full border border-amber-500/30">
-                                    50% OFF
+                                <span className="bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded-full border border-blue-500/30">
+                                    monthly
                                 </span>
                             </p>
-                            <p className="text-slate-400 text-sm mt-1">
-                                Initial fee, then ${(product.price * 0.5).toFixed(2)}/month
-                            </p>
+                           
                         </div>
                     ) : (
                         <div>
                             <p className="text-amber-400 text-xl font-bold flex items-center gap-2">
                                 ${product.price.toFixed(2)}
-                                {product.category === 'Trade Ideas' && product.price > 0 && (
+                                {product.badge && (
+                                    <span className={product.badge}>
+                                        monthly
+                                    </span>
+                                )}
+                                {product.category === 'Trade Ideas' && product.price > 0 && !product.badge && (
                                     <span className="bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded-full border border-blue-500/30">
-                                        {product.id === 14 ? 'weekly' : (product.id === 3 ? 'Initial fee' : 'monthly')}
+                                        {product.id === 14 ? 'weekly' : 'monthly'}
                                     </span>
                                 )}
                                 {product.id === 15 && (
@@ -3533,9 +3472,7 @@ const updatedPlatinumPackage = platinumPackage ? {
         ? filteredProducts.filter(p => p.category === 'Trade Ideas' && p.id !== 2) 
         : [];
         
-    const mentorship = selectedCategory === 'Mentorship' || !selectedCategory 
-        ? filteredProducts.filter(p => p.category === 'Mentorship') 
-        : [];
+
         
     const courses = selectedCategory === 'Courses' || !selectedCategory 
         ? filteredProducts.filter(p => p.category === 'Courses') 
@@ -3931,11 +3868,22 @@ const updatedPlatinumPackage = platinumPackage ? {
                                 {/* Softwares Section */}
                                 {(selectedCategory === 'Softwares' || !selectedCategory) && softwares.length > 0 && (
                                     <div className="mb-12">
-                                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-                                            <svg className="w-6 h-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                            </svg>
-                                            Softwares
+                                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center justify-between">
+                                            <div className="flex items-center">
+                                                <svg className="w-6 h-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                                </svg>
+                                                Softwares
+                                            </div>
+                                            <a 
+                                                href="https://mr1-get-the-app.pages.dev/" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-blue-500/10 p-2 rounded-lg border border-amber-500/20 text-amber-400 hover:text-amber-300 transition-colors group text-sm"
+                                            >
+                                                <img src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" alt="App" className="w-4 h-4 object-contain group-hover:animate-bounce" />
+                                                <span className="font-medium">Download Key levels app here</span>
+                                            </a>
                                         </h2>
                                         {renderProductGrid(softwares)}
                                     </div>
@@ -3964,19 +3912,6 @@ const updatedPlatinumPackage = platinumPackage ? {
                                             Trading Courses
                                         </h2>
                                         {renderProductGrid(courses)}
-                                    </div>
-                                )}
-
-                                {/* Mentorship Section */}
-                                {mentorship.length > 0 && (
-                                    <div className="mb-12">
-                                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-                                            <svg className="w-6 h-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                            </svg>
-                                            Mentorship Programs
-                                        </h2>
-                                        {renderProductGrid(mentorship)}
                                     </div>
                                 )}
 
