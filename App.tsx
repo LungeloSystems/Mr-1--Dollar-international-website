@@ -1797,164 +1797,49 @@ const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
                                     <div className="relative z-10 p-4 md:p-8 flex-1 flex flex-col overflow-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
                                         {/* Header with Icon */}
                                         <div className="flex items-center gap-3 mb-6">
-                                            <div className="inline-flex items-center bg-slate-700/50 backdrop-blur-sm px-4 py-2 rounded-full border border-amber-500/30 mb-6">
+                                            <div className="inline-flex items-center bg-slate-700/50 backdrop-blur-sm px-4 py-2 rounded-full border border-amber-500/30">
                                                 <svg className="w-5 h-5 text-amber-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                                 </svg>
                                                 <div className="flex flex-col">
                                                     <span className="text-white font-medium">Drakensburg, South Africa</span>
-                                                    <span className="text-amber-300 text-sm font-medium">Upcoming Tradecation (Feb 23-27, 2026)</span>
+                                                    <span className="text-amber-300 text-sm font-medium">Feb 23-27, 2026</span>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div className="grid gap-6 grid-cols-1 md:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)] mb-8 overflow-visible">
-                                            {/* Upcoming Tradecation Details */}
+                                        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 mb-6">
+                                            {/* What's Included */}
                                             <div>
-                                                <h4 className="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2">
-                                                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                                                    </svg>
-                                                    What's Included
-                                                </h4>
-                                                <div className="bg-slate-900/70 border border-amber-500/20 rounded-2xl p-6 sm:p-8 space-y-6 shadow-lg shadow-amber-500/10">
-                                                    <div className="space-y-3 text-sm sm:text-base leading-relaxed text-slate-200">
-                                                        <p>
-                                                            At <span className="text-amber-400 font-semibold">Mr One Dollar International</span>, the Full Course is engineered to transform you into a calm, confident and profitable trader—whether you are starting from zero or ready to master the markets at an elite level.
-                                                        </p>
-                                                        <p>
-                                                            This isn’t another video bundle. It’s an immersive experience that blends education, mentorship and lifestyle optimisation so you can live like a professional trader while you learn to think like one.
-                                                        </p>
-                                                    </div>
-
-                                                    <div className="bg-black/30 border border-amber-500/20 rounded-xl overflow-hidden">
-                                                        <button
-                                                            type="button"
-                                                            onClick={() => setPerksOpen(prev => !prev)}
-                                                            className="w-full flex items-center justify-between gap-3 px-5 sm:px-6 py-4 text-left text-white font-semibold"
-                                                            aria-expanded={perksOpen}
-                                                        >
-                                                            <span className="flex items-center gap-2">
-                                                                <span className="text-amber-400 text-xl">✨</span>
-                                                                When you enrol, you unlock:
-                                                            </span>
-                                                            <svg
-                                                                className={`w-5 h-5 text-amber-300 transition-transform ${perksOpen ? 'rotate-180' : ''}`}
-                                                                fill="none"
-                                                                viewBox="0 0 24 24"
-                                                                stroke="currentColor"
-                                                                strokeWidth={1.5}
-                                                            >
-                                                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                            </svg>
-                                                        </button>
-                                                        {perksOpen && (
-                                                            <div className="px-5 sm:px-6 pb-5 sm:pb-6 space-y-4">
-                                                                <div className="grid gap-4 sm:grid-cols-2">
-                                                                    {[{
-                                                                        icon: '🎓',
-                                                                        title: 'Complete Training Journey',
-                                                                        description: 'Beginner, Intermediate & Advanced modules that build true mastery.'
-                                                                    }, {
-                                                                        icon: '💡',
-                                                                        title: '3 Months of Diamond💎 Trade Ideas',
-                                                                        description: 'Learn and earn simultaneously with guided institutional-grade insights.'
-                                                                    }, {
-                                                                        icon: '💼',
-                                                                        title: 'Funding Pathway',
-                                                                        description: '$15,000 prop firm account setup.'
-                                                                    }, {
-                                                                        icon: '🏨',
-                                                                        title: 'Luxury Tradecation Residency',
-                                                                        description: 'Private accommodation (Mon–Fri) designed for deep focus and execution.'
-                                                                    }, {
-                                                                        icon: '🍽️',
-                                                                        title: 'Lifestyle Support',
-                                                                        description: 'Daily breakfast, lunch, dinner & snacks prepared by our private chef.'
-                                                                    }, {
-                                                                        icon: '🧠',
-                                                                        title: 'Mind & Body Optimisation',
-                                                                        description: '5 AM fitness with a health coach plus 30-minute mindset coaching every day.'
-                                                                    }].map((item, index) => (
-                                                                        <div key={index} className="bg-slate-800/80 border border-slate-700/60 rounded-xl p-4 flex flex-col gap-2 hover:border-amber-400/60 transition-colors">
-                                                                            <div className="flex items-center gap-2 text-amber-300 font-semibold">
-                                                                                <span className="text-xl">{item.icon}</span>
-                                                                                <span>{item.title}</span>
-                                                                            </div>
-                                                                            <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
-                                                                        </div>
-                                                                    ))}
-                                                                </div>
-                                                            </div>
-                                                        )}
-                                                    </div>
-
-                                                    <div className="space-y-3 text-sm sm:text-base leading-relaxed text-slate-200">
-                                                        <p>
-                                                            It’s more than education—it’s the <span className="text-amber-400 font-semibold">Blueprint to the 1%</span>, engineered to reshape you mentally, emotionally and technically into a funded trader with institutional discipline.
-                                                        </p>
-                                                    </div>
-
-                                                    <div className="bg-slate-800/60 border border-slate-700/50 rounded-xl p-5 space-y-3">
-                                                        <div className="flex items-center gap-2">
-                                                            <span className="text-amber-300 text-2xl">💡</span>
-                                                            <h5 className="text-lg font-semibold text-white">You’ll learn how to:</h5>
+                                                <h4 className="text-lg font-bold text-amber-400 mb-4">What's Included</h4>
+                                                <div className="grid gap-3">
+                                                    {[
+                                                        { icon: '🎓', text: 'Complete Training Journey' },
+                                                        { icon: '💡', text: '3 Months of Diamond Trade Ideas' },
+                                                        { icon: '💼', text: '$15,000 Prop Firm Account Setup' },
+                                                        { icon: '🏨', text: 'Luxury Accommodation' },
+                                                        { icon: '🍽️', text: 'Private Chef Meals' },
+                                                        { icon: '🧠', text: 'Daily Fitness & Mindset Coaching' }
+                                                    ].map((item, index) => (
+                                                        <div key={index} className="flex items-center gap-3 bg-slate-800/50 border border-slate-700/50 rounded-lg p-3">
+                                                            <span className="text-xl">{item.icon}</span>
+                                                            <span className="text-slate-200 text-sm">{item.text}</span>
                                                         </div>
-                                                        <ul className="grid gap-2 sm:grid-cols-2 text-slate-300 text-sm leading-relaxed">
-                                                            {[
-                                                                'Decode how the forex market truly moves',
-                                                                'Master charting, Deep chart secrets and Our powerful strategies',
-                                                                'Apply elite risk management and cultivate consistent psychology',
-                                                                'Develop and stress-test your own winning strategy',
-                                                                'Trade like a funded professional and pass prop firm challenges'
-                                                            ].map((item, index) => (
-                                                                <li key={index} className="flex items-start gap-2">
-                                                                    <span className="text-amber-400 mt-0.5">▹</span>
-                                                                    <span>{item}</span>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                        <p className="text-slate-200 text-sm sm:text-base leading-relaxed pt-1">
-                                                            When you complete the Full Course, you won’t just understand forex—you’ll think, operate, and execute like a seasoned professional. 🔥
-                                                        </p>
-                                                    </div>
+                                                    ))}
                                                 </div>
                                             </div>
 
-                                            {/* Previous Tradecation Highlight */}
-                                            <div className="bg-gradient-to-br from-slate-800/70 to-slate-900/80 border border-amber-500/20 rounded-2xl p-6 sm:p-7 shadow-xl shadow-black/20 space-y-4">
+                                            {/* Previous Tradecation */}
+                                            <div className="bg-gradient-to-br from-slate-800/70 to-slate-900/80 border border-amber-500/20 rounded-xl p-5 space-y-4">
                                                 <div className="inline-flex items-center gap-2 text-amber-300 text-xs font-semibold uppercase tracking-[0.2em]">
                                                     <span className="h-1.5 w-1.5 rounded-full bg-amber-400"></span>
                                                     Previous Tradecation
                                                 </div>
-                                                <div className="space-y-3">
-                                                    <h4 className="text-2xl font-bold text-white">Trade-Cation Pine Lake Resort</h4>
-                                                    <p className="text-slate-300 text-sm leading-relaxed">
-                                                        Experience luxury and learning in the heart of Drakensburg's breathtaking landscapes. Get a glimpse of how we blend lifestyle, discipline, and trader performance.
-                                                    </p>
-                                                </div>
-                                                <ul className="space-y-2 text-sm text-slate-300">
-                                                    {[
-                                                        {
-                                                            icon: '🏞️',
-                                                            text: 'Immersive live-in mentorship for traders at every level'
-                                                        },
-                                                        {
-                                                            icon: '🍳',
-                                                            text: 'Private chef-curated meals tailored for peak performance'
-                                                        },
-                                                        {
-                                                            icon: '🤝',
-                                                            text: 'Powerful networking with high-performing traders'
-                                                        }
-                                                    ].map((item, index) => (
-                                                        <li key={index} className="flex items-start gap-3">
-                                                            <span className="text-lg leading-none">{item.icon}</span>
-                                                            <span>{item.text}</span>
-                                                        </li>
-                                                    ))}
-                                                </ul>
+                                                <h4 className="text-xl font-bold text-white">Pine Lake Resort</h4>
+                                                <p className="text-slate-300 text-sm leading-relaxed">
+                                                    Experience luxury and learning in Drakensburg's breathtaking landscapes.
+                                                </p>
                                                 <a 
                                                     href="https://www.youtube.com/watch?v=AdtFWr97JmQ" 
                                                     target="_blank" 
@@ -1964,28 +1849,26 @@ const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
                                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                                                         <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                                                     </svg>
-                                                    Watch Previous Tradecation
+                                                    Watch Previous
                                                 </a>
                                             </div>
                                         </div>
 
                                         {/* CTA */}
-                                        <div className="flex flex-col sm:flex-row gap-3">
-                                            <a 
-                                                href="#" 
-                                                onClick={(e) => { 
-                                                    e.preventDefault(); 
-                                                    setCurrentPage('events'); 
-                                                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                                                }}
-                                                className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20"
-                                            >
-                                                <span>Reserve Your Spot</span>
-                                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        <a 
+                                            href="#" 
+                                            onClick={(e) => { 
+                                                e.preventDefault(); 
+                                                setCurrentPage('events'); 
+                                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                                            }}
+                                            className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20"
+                                        >
+                                            <span>Reserve Your Spot</span>
+                                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
