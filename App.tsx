@@ -3748,6 +3748,19 @@ const updatedPlatinumPackage = platinumPackage ? {
                             </div>
                         ) : (
                             <>
+                                {/* Mobile App Download Link */}
+                                <div className="md:hidden mb-4">
+                                    <a 
+                                        href="https://mr1-get-the-app.pages.dev/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500/10 to-blue-500/10 p-3 rounded-xl border border-amber-500/20 text-amber-400 hover:text-amber-300 transition-colors group"
+                                    >
+                                        <img src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" alt="App" className="w-5 h-5 object-contain group-hover:animate-bounce" />
+                                        <span className="text-sm font-medium">Download Key levels app here</span>
+                                    </a>
+                                </div>
+                                
                                 {/* Softwares Section */}
                                 {(selectedCategory === 'Softwares' || !selectedCategory) && softwares.length > 0 && (
                                     <div className="mb-12">
@@ -3762,7 +3775,7 @@ const updatedPlatinumPackage = platinumPackage ? {
                                                 href="https://mr1-get-the-app.pages.dev/" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-blue-500/10 p-2 rounded-lg border border-amber-500/20 text-amber-400 hover:text-amber-300 transition-colors group text-sm"
+                                                className="hidden md:flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-blue-500/10 p-2 rounded-lg border border-amber-500/20 text-amber-400 hover:text-amber-300 transition-colors group text-sm"
                                             >
                                                 <img src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" alt="App" className="w-4 h-4 object-contain group-hover:animate-bounce" />
                                                 <span className="font-medium">Download Key levels app here</span>
