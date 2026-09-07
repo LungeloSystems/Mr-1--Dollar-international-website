@@ -4478,7 +4478,7 @@ const DiamondTradeIdeasCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/mr1dollar-international/diamond-trade-ideas-copy/', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_KhROxgHEg4L0c?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -4520,7 +4520,7 @@ const DiamondTradeIdeasCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_qNrnwywYsgp5M"
+                            data-whop-checkout-plan-id="prod_KhROxgHEg4L0c"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -4605,7 +4605,7 @@ const PrivateWealthVipBlackCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_t6cWYP0riNwZc?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_x79wll9PQbIKu?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -4647,7 +4647,7 @@ const PrivateWealthVipBlackCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_t6cWYP0riNwZc"
+                            data-whop-checkout-plan-id="prod_x79wll9PQbIKu"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -4732,7 +4732,7 @@ const BeginnersCourseCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_FLNIgd01exxwN?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_27Sg99aDR0rye?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -4774,7 +4774,7 @@ const BeginnersCourseCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_FLNIgd01exxwN"
+                            data-whop-checkout-plan-id="prod_27Sg99aDR0rye"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -4859,7 +4859,7 @@ const IntermediateCourseCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_mdhlnuqZn2k9O?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_5Rt6rQ307h5JC?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -4901,7 +4901,7 @@ const IntermediateCourseCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_mdhlnuqZn2k9O"
+                            data-whop-checkout-plan-id="prod_5Rt6rQ307h5JC"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -4986,7 +4986,7 @@ const AdvancedCourseCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_6exMgeEDvYPXZ?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_69dN9HWDOkgPQ?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -5028,7 +5028,7 @@ const AdvancedCourseCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_6exMgeEDvYPXZ"
+                            data-whop-checkout-plan-id="prod_69dN9HWDOkgPQ"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -5113,7 +5113,7 @@ const FullCourseTradecationCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_91pPZHbkPYU9q?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_esLhS7OpsObdt?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -5155,7 +5155,7 @@ const FullCourseTradecationCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_91pPZHbkPYU9q"
+                            data-whop-checkout-plan-id="prod_esLhS7OpsObdt"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -5748,7 +5748,7 @@ const NFPEventAccessCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_EoyvAo4ReKJhi?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_XdZVGRFZdCbnd?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -5790,7 +5790,7 @@ const NFPEventAccessCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_EoyvAo4ReKJhi"
+                            data-whop-checkout-plan-id="prod_XdZVGRFZdCbnd"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
@@ -6002,7 +6002,7 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                         <p className="text-slate-400 text-sm mb-6">Please access your website using https://mr1dollar.international to complete your purchase.</p>
                         <div className="space-y-3">
                             <button 
-                                onClick={() => window.open('https://whop.com/checkout/plan_VnCNgYjLzaxIF?d2c=true', '_blank')}
+                                onClick={() => window.open('https://whop.com/checkout/prod_VnCNgYjLzaxIF?d2c=true', '_blank')}
                                 className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors"
                             >
                                 Continue on Whop
@@ -6044,7 +6044,7 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="bg-slate-900 rounded-lg p-4 border border-slate-700">
                         <div
-                            data-whop-checkout-plan-id="plan_VnCNgYjLzaxIF"
+                            data-whop-checkout-plan-id="prod_VnCNgYjLzaxIF"
                             data-whop-checkout-return-url="https://mr1dollar.international/"
                             data-whop-checkout-theme="dark"
                             data-whop-checkout-on-complete="onCheckoutComplete"
