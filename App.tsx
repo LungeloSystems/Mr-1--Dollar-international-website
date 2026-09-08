@@ -1587,7 +1587,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => (
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('home'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Home</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('about'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">About Us</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('services'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Services</a>
-                    <a href="https://mr1-get-the-app.pages.dev/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Download Key levels app here</a>
+                    <a href="https://mr1-get-the-app.pages.dev/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Download Mr One Dollar app</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('terms'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Terms</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('privacy'); }} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">Privacy Policy</a>
                 </div>
@@ -3756,7 +3756,7 @@ const updatedPlatinumPackage = platinumPackage ? {
                                         className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500/10 to-blue-500/10 p-3 rounded-xl border border-amber-500/20 text-amber-400 hover:text-amber-300 transition-colors group"
                                     >
                                         <img src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" alt="App" className="w-5 h-5 object-contain group-hover:animate-bounce" />
-                                        <span className="text-sm font-medium">Download Key levels app here</span>
+                                        <span className="text-sm font-medium">Download Mr One Dollar app</span>
                                     </a>
                                 </div>
                                 
@@ -3777,7 +3777,7 @@ const updatedPlatinumPackage = platinumPackage ? {
                                                 className="hidden md:flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-blue-500/10 p-2 rounded-lg border border-amber-500/20 text-amber-400 hover:text-amber-300 transition-colors group text-sm"
                                             >
                                                 <img src="https://i.postimg.cc/T3mHV2x0/Favicon_Color.png" alt="App" className="w-4 h-4 object-contain group-hover:animate-bounce" />
-                                                <span className="font-medium">Download Key levels app here</span>
+                                                <span className="font-medium">Download Mr One Dollar app</span>
                                             </a>
                                         </h2>
                                         {renderProductGrid(softwares)}
