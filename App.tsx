@@ -5048,6 +5048,7 @@ const AdvancedCourseCheckout: React.FC = () => {
 const AdvancedKeyLevelsCalculatorCheckout: React.FC = () => {
     const [isSecure, setIsSecure] = useState(true);
     const [showSecureWarning, setShowSecureWarning] = useState(false);
+    const [showAddons, setShowAddons] = useState(false);
 
     useEffect(() => {
         // Check if running on HTTPS
@@ -5133,21 +5134,29 @@ const AdvancedKeyLevelsCalculatorCheckout: React.FC = () => {
                     <p className="text-slate-400">Complete your purchase to get instant access to our advanced key levels calculator</p>
                 </div>
 
-                {/* Add-ons Banner — above checkout for visibility */}
+                {/* Add-ons Dropdown */}
                 <div className="max-w-4xl mx-auto mb-6">
-                    <div className="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-amber-500/10 rounded-xl p-5 border border-amber-500/30">
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center">
-                                <svg className="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button
+                        onClick={() => setShowAddons(!showAddons)}
+                        className="w-full flex items-center justify-between bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-amber-500/10 rounded-xl p-4 border border-amber-500/30 hover:border-amber-500/50 transition-all duration-200"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="w-9 h-9 bg-amber-500/20 rounded-full flex items-center justify-center">
+                                <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
-                            <div>
-                                <h2 className="text-xl font-bold text-white">Supercharge Your Calculator</h2>
-                                <p className="text-slate-400 text-sm">Optional add-on — subscribe separately on Whop</p>
+                            <div className="text-left">
+                                <h2 className="text-lg font-bold text-white">Add-Ons</h2>
+                                <p className="text-slate-400 text-sm">Optional add-ons — subscribe separately on Whop</p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <svg className={`w-5 h-5 text-amber-400 transition-transform duration-300 ${showAddons ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    {showAddons && (
+                        <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                             {/* Automated Trade Ideas */}
                             <div className="bg-slate-800/80 rounded-lg p-5 border border-slate-700 hover:border-amber-500/60 hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300 group">
                                 <div className="flex items-start justify-between mb-3">
@@ -5169,7 +5178,7 @@ const AdvancedKeyLevelsCalculatorCheckout: React.FC = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
 
                 {/* Embedded Checkout */}
@@ -6103,6 +6112,7 @@ const NFPEventAccessCheckout: React.FC = () => {
 const KeyLevelsCalculatorCheckout: React.FC = () => {
     const [isSecure, setIsSecure] = useState(true);
     const [showSecureWarning, setShowSecureWarning] = useState(false);
+    const [showAddons, setShowAddons] = useState(false);
 
     useEffect(() => {
         // Check if running on HTTPS
@@ -6188,21 +6198,29 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                     <p className="text-slate-400">Complete your purchase to get instant access to the Key Levels Calculator</p>
                 </div>
                 
-                {/* Add-ons Banner — above checkout for visibility */}
+                {/* Add-ons Dropdown */}
                 <div className="max-w-4xl mx-auto mb-6">
-                    <div className="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-amber-500/10 rounded-xl p-5 border border-amber-500/30">
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center">
-                                <svg className="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button
+                        onClick={() => setShowAddons(!showAddons)}
+                        className="w-full flex items-center justify-between bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-amber-500/10 rounded-xl p-4 border border-amber-500/30 hover:border-amber-500/50 transition-all duration-200"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="w-9 h-9 bg-amber-500/20 rounded-full flex items-center justify-center">
+                                <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
-                            <div>
-                                <h2 className="text-xl font-bold text-white">Supercharge Your Calculator</h2>
+                            <div className="text-left">
+                                <h2 className="text-lg font-bold text-white">Add-Ons</h2>
                                 <p className="text-slate-400 text-sm">Optional add-ons — subscribe separately on Whop</p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <svg className={`w-5 h-5 text-amber-400 transition-transform duration-300 ${showAddons ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    {showAddons && (
+                        <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                             {/* Momentum Gauge */}
                             <div className="bg-slate-800/80 rounded-lg p-5 border border-slate-700 hover:border-amber-500/60 hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300 group">
                                 <div className="flex items-start justify-between mb-3">
@@ -6244,7 +6262,7 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
 
                 {/* Embedded Checkout */}
