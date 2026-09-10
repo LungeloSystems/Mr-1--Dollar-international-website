@@ -5167,15 +5167,13 @@ const AdvancedKeyLevelsCalculatorCheckout: React.FC = () => {
                                     <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Add-on</span>
                                 </div>
                                 <p className="text-slate-400 text-sm mb-4">Get automated trade ideas delivered to you, perfectly complementing your Advanced Key Levels Calculator.</p>
-                                <button
-                                    onClick={() => window.open('https://whop.com/checkout/plan_Y0ZE4L4ZI6nE7?d2c=true', '_blank')}
-                                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
-                                >
-                                    Subscribe to Add-on
-                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </button>
+                                <div
+                                    data-whop-checkout-plan-id="plan_Y0ZE4L4ZI6nE7"
+                                    data-whop-checkout-return-url="https://mr1dollar.international/"
+                                    data-whop-checkout-theme="dark"
+                                    data-whop-checkout-on-complete="onCheckoutComplete"
+                                    style={{ minHeight: '400px' }}
+                                />
                             </div>
                         </div>
                     )}
@@ -6231,15 +6229,13 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                                     <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Add-on</span>
                                 </div>
                                 <p className="text-slate-400 text-sm mb-4">Add the Momentum Gauge indicator to supercharge your Key Levels Calculator with momentum-based signals.</p>
-                                <button
-                                    onClick={() => window.open('https://whop.com/checkout/plan_LgNwFTWFAjehB?d2c=true', '_blank')}
-                                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
-                                >
-                                    Subscribe to Add-on
-                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </button>
+                                <div
+                                    data-whop-checkout-plan-id="plan_LgNwFTWFAjehB"
+                                    data-whop-checkout-return-url="https://mr1dollar.international/"
+                                    data-whop-checkout-theme="dark"
+                                    data-whop-checkout-on-complete="onCheckoutComplete"
+                                    style={{ minHeight: '400px' }}
+                                />
                             </div>
                             {/* Automated Trade Ideas */}
                             <div className="bg-slate-800/80 rounded-lg p-5 border border-slate-700 hover:border-amber-500/60 hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300 group">
@@ -6251,15 +6247,13 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                                     <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Add-on</span>
                                 </div>
                                 <p className="text-slate-400 text-sm mb-4">Get automated trade ideas delivered to you, perfectly complementing your Key Levels Calculator.</p>
-                                <button
-                                    onClick={() => window.open('https://whop.com/checkout/plan_Y0ZE4L4ZI6nE7?d2c=true', '_blank')}
-                                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
-                                >
-                                    Subscribe to Add-on
-                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </button>
+                                <div
+                                    data-whop-checkout-plan-id="plan_Y0ZE4L4ZI6nE7"
+                                    data-whop-checkout-return-url="https://mr1dollar.international/"
+                                    data-whop-checkout-theme="dark"
+                                    data-whop-checkout-on-complete="onCheckoutComplete"
+                                    style={{ minHeight: '400px' }}
+                                />
                             </div>
                         </div>
                     )}
