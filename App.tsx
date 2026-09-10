@@ -5166,6 +5166,39 @@ const AdvancedKeyLevelsCalculatorCheckout: React.FC = () => {
                             </a>
                         </div>
                     </div>
+
+                    {/* Add-ons Section */}
+                    <div className="mt-6">
+                        <h2 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                            <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                            Enhance Your Calculator with Add-ons
+                        </h2>
+                        <p className="text-slate-400 text-sm mb-4">Boost your trading toolkit with this optional add-on. Subscribe separately on Whop.</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {/* Automated Trade Ideas */}
+                            <div className="bg-slate-800 rounded-lg p-5 border border-slate-700 hover:border-amber-500/50 transition-all duration-200">
+                                <div className="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">Automated Trade Ideas</h3>
+                                        <p className="text-amber-400 font-bold text-lg">$19.99<span className="text-slate-400 text-sm font-normal">/month</span></p>
+                                    </div>
+                                    <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Add-on</span>
+                                </div>
+                                <p className="text-slate-400 text-sm mb-4">Get automated trade ideas delivered to you, perfectly complementing your Advanced Key Levels Calculator.</p>
+                                <button
+                                    onClick={() => window.open('https://whop.com/checkout/plan_Y0ZE4L4ZI6nE7?d2c=true', '_blank')}
+                                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                                >
+                                    Subscribe to Add-on
+                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -6180,6 +6213,59 @@ const KeyLevelsCalculatorCheckout: React.FC = () => {
                                 />
                                 <span className="text-sm font-medium">Back to Services</span>
                             </a>
+                        </div>
+                    </div>
+
+                    {/* Add-ons Section */}
+                    <div className="mt-6">
+                        <h2 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                            <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                            Enhance Your Calculator with Add-ons
+                        </h2>
+                        <p className="text-slate-400 text-sm mb-4">Boost your trading toolkit with these optional add-ons. Subscribe separately on Whop.</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {/* Momentum Gauge */}
+                            <div className="bg-slate-800 rounded-lg p-5 border border-slate-700 hover:border-amber-500/50 transition-all duration-200">
+                                <div className="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">Momentum Gauge</h3>
+                                        <p className="text-amber-400 font-bold text-lg">$59.99<span className="text-slate-400 text-sm font-normal">/month</span></p>
+                                    </div>
+                                    <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Add-on</span>
+                                </div>
+                                <p className="text-slate-400 text-sm mb-4">Add the Momentum Gauge indicator to supercharge your Key Levels Calculator with momentum-based signals.</p>
+                                <button
+                                    onClick={() => window.open('https://whop.com/checkout/plan_LgNwFTWFAjehB?d2c=true', '_blank')}
+                                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                                >
+                                    Subscribe to Add-on
+                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            {/* Automated Trade Ideas */}
+                            <div className="bg-slate-800 rounded-lg p-5 border border-slate-700 hover:border-amber-500/50 transition-all duration-200">
+                                <div className="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">Automated Trade Ideas</h3>
+                                        <p className="text-amber-400 font-bold text-lg">$19.99<span className="text-slate-400 text-sm font-normal">/month</span></p>
+                                    </div>
+                                    <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Add-on</span>
+                                </div>
+                                <p className="text-slate-400 text-sm mb-4">Get automated trade ideas delivered to you, perfectly complementing your Key Levels Calculator.</p>
+                                <button
+                                    onClick={() => window.open('https://whop.com/checkout/plan_Y0ZE4L4ZI6nE7?d2c=true', '_blank')}
+                                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                                >
+                                    Subscribe to Add-on
+                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
